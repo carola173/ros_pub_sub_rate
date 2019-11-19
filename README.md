@@ -11,7 +11,7 @@ C. py_pub_cpp_sub.launch- Launch publisher in python and subscriber in cpp
 
 D. py_pub_sub.launch - Launching publisher and subscriber in python
 
-Since Pytho is slower than the C++ program as the python codes are interpeted everytime it is executed while the cpp code is once compiled then the cpp object code is linked to the ROS which runs.
+Since Python is slower than the C++ program as the python codes are interpeted everytime it is executed while the cpp code is once compiled then the cpp object code is linked to the ROS which runs.
 The python code is interpreted i.e it is compiled in run time, while the program is being executed. That makes the code slower.
 
 When the publishing rate increases then the subsciber rate needs to match it. For the following scenario it sometime doesnot matches for instance when the publisher is cpp and subscriber is python - As python code is complied everytime on runtime
