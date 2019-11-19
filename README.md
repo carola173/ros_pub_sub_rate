@@ -3,8 +3,11 @@ Validating the publish and subscribe rate in ROS for C++ and Pyhon.
 
 There are four launch files showing the possible combination
 A. cpp_pub_py_sub.launch - Launching publisher in cpp and Subscriber in Python
+
 B. cpp_pub_sub.launch - Launching subsriber and publisher in cpp
+
 C. py_pub_cpp_sub.launch- Launch publisher in python and subscriber in cpp
+
 D. py_pub_sub.launch - Launching publisher and subscriber in python
 
 Since Pytho is slower than the C++ program as the python codes are interpeted everytime it is executed while the cpp code is once compiled then the cpp object code is linked to the ROS which runs.
