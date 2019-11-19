@@ -24,6 +24,6 @@ The main difference between the rospy and roscpp is that one is used for python,
 
 Also rospy has a completely different threading model. Every subscriber and timer in rospy spawns its own thread, and rospy.spin() is jut an infinite loop that lets those threads operate. For that reason, mutexes are very important in rospy when globals or class variables are used.
 
-Along with this theh rospy doesn't have the concept of the roshandle,Operations such as creating a publisher and a subscriber are directly encapsulated into functions or classes in rospy. 
+Along with this the rospy doesn't have the concept of the roshandle,Operations such as creating a publisher and a subscriber are directly encapsulated into functions or classes in rospy. 
 
 The naming of some rospy interfaces is inconsistent with roscpp. In some places, developers need to pay attention to avoid calling errors.
