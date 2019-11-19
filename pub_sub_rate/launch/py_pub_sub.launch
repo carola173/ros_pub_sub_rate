@@ -1,0 +1,17 @@
+<!-- -->
+<launch>
+
+<node name="pythonPublisher" pkg ="pub_sub_rate" type="python_pub.py" respawn="false" output="screen"/>
+<node name="pythonSubscriber" pkg ="pub_sub_rate" type="python_sub.py" respawn="false" output="screen"/>
+
+<node name="rate_plot"
+        pkg="rqt_plot"
+        type="rqt_plot"
+        args="/PythonSubFreqRate /PythonPublisherRate" />
+
+<node name="rqt_reconfigure" pkg ="rqt_reconfigure" type="rqt_reconfigure" respawn="false" output="screen"/>
+
+</launch>
+
+
+
